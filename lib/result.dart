@@ -56,11 +56,11 @@ class _ResultPageState extends State<ResultPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   if ( bmires>= 25)
-                    Text('OVERWEIGHT',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.deepOrange),)
+                    const Text('OVERWEIGHT',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.deepOrange),)
                  else if(bmires > 18.5&&bmires <25)
-                    Text('NORMAL',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.green),)
+                    const Text('NORMAL',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.green),)
                   else
-                    Text('UNDERWEIGHT',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.red),),
+                    const Text('UNDERWEIGHT',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30,color: Colors.red),),
                   const SizedBox(height: 20,),
                   Text(
                     bmires.toStringAsFixed(2),
@@ -70,18 +70,18 @@ class _ResultPageState extends State<ResultPage> {
                         color: Colors.pink),
                   ),
                   const SizedBox(height: 20,),
-                  Text('Normal BMI range: \n18.5 - 25 kg/m2 ',
-                    style: const TextStyle(
+                  const Text('Normal BMI range: \n18.5 - 25 kg/m2 ',
+                    style: TextStyle(
                         fontSize: 19,
                         fontWeight: FontWeight.bold,),
                   ),
                   const SizedBox(height: 20,),
                   if ( bmires>= 25)
-                    Text('You have a more than normal body weight.\n Try to do more Exercise',style: TextStyle(fontWeight: FontWeight.w700,fontSize: 19),)
+                    const Text('You have a more than normal body weight.\n Try to do more Exercise',style: TextStyle(fontWeight: FontWeight.w700,fontSize: 19),)
                   else if(bmires > 18.5)
-                    Text('You have a normal body weight.\nGood job!',style: TextStyle(fontWeight: FontWeight.w700,fontSize: 19),)
+                    const Text('You have a normal body weight.\nGood job!',style: TextStyle(fontWeight: FontWeight.w700,fontSize: 19),)
                   else
-                    Text('You have a lower than normal body weight.\n Try to eat more',style: TextStyle(fontWeight: FontWeight.w700,fontSize: 19),),
+                    const Text('You have a lower than normal body weight.\n Try to eat more',style: TextStyle(fontWeight: FontWeight.w700,fontSize: 19),),
                 ],
               ),
             ),
